@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>FleetOpz | Login</title>
+    <style>
+        body {
+            background-color: rgb(24, 28, 31);
+            background-image: url('public/bg.webp');
+            /* Change to your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="p-10 min-w-screen flex items-center justify-between text-gray-200">
+        <a href="/index.html" class="flex items-center justify-center gap-2 font-bold">
+            <img src="public/logo.png" height="18px" width="18px" alt="logo">
+            FleetOpz
+        </a>
+    </nav>
+
+    <main class="flex items-center justify-center">
+        <div class=" mt-12 bg-white w-[350px] rounded-2xl p-10 shadow-2xl">
+            <div class="flex justify-evenly font-bold text-sm">
+                <button class="text-black hover:cursor-pointer">Login</button>
+                <button class="text-black/50 hover:cursor-pointer">Signup</button>
+            </div>
+            <div class="mt-8">
+                <h2 class="font-bold">Welcome</h2>
+                <p class="text-xs text-black/50">Please enter your credentials</p>
+            </div>
+            <div class="mt-5 space-y-5">
+                <label for="email" class="text-xs">Email</label>
+                <input id="email" type="text" placeholder="Email" class="border-1 rounded-md py-2 px-3 w-full">
+
+                <label for="password" class="text-xs">password</label>
+                <input type="password" placeholder="password" class="border-1 rounded-md py-2 px-3 w-full">
+
+                <div>
+                    <a href="#" class="text-xs">Forgot Password</a>
+                </div>
+
+                <a href="/dashboard.html">
+                    <Button class="w-full bg-black text-white p-2 rounded-md hover:cursor-pointer">Login</Button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
