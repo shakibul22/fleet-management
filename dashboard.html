@@ -11,7 +11,7 @@
 <body class="min-h-screen">
     <main class="grid grid-cols-20 min-h-screen">
         <!-- Sidebar (Left) -->
-        <div class="col-span-4 p-5 flex flex-col items-center gap-3 p-3 w-full">
+        <div class="col-span-4 p-5 flex flex-col items-center gap-3 p-3 w-full bg-purple-500/10">
             <!-- logo -->
             <div>
                 <a href="/index.html" class="flex items-center justify-center gap-2 font-bold">
@@ -58,8 +58,18 @@
         </div>
 
         <!-- Main Content (Right) -->
-        <div class="col-span-16 bg-green-500/10 p-5 flex items-center justify-center">
-            Main Content
+        <div class="col-span-16 p-5">
+            <!-- dashboard navbar -->
+            <div class="flex items-center justify-between">
+                <input type="text" placeholder="Search" class="p-3 bg-purple-500/10 w-[500px] rounded-xl">
+                <button class="bg-black rounded-xl p-2 px-3 hover:shadow-xl hover:cursor-pointer transition-all">
+                    <!-- avatar -->
+                    <div class="flex items-center justify-center gap-2">
+                        <div class="bg-gray-500 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white">A</div>
+                        <p class="text-white">John Doe</p>
+                    </div>
+                </button>
+            </div>
         </div>
     </main>
 </body>
