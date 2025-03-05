@@ -1074,7 +1074,7 @@
                         vehiclesTableBody.appendChild(row);
                     });
 
-                    // Add event listeners to edit and delete buttons
+                  
                     document.querySelectorAll('.edit-vehicle').forEach(button => {
                         button.addEventListener('click', function() {
                             const id = parseInt(this.getAttribute('data-id'));
@@ -1151,8 +1151,7 @@
             inactivityTimer = setTimeout(reduceOpacity, 2000);
         }
     
-        // Attach event listeners
-        // When the button is clicked, reset opacity and open modal
+        
         addVehicleButton.addEventListener('click', handleClick);
     
         // Reset inactivity timer on mouseover to keep the button active when hovered
